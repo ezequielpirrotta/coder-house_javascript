@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #062f55;
+}
+
+a {
+  text-align: justify;
+  text-decoration: none;
+}
+
+.main-content {
+  text-align: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.column_form, body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+body {
+  min-height: 100%;
+  text-align: center;
+  align-items: center;
+  color: antiquewhite;
+  /* animation section */
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}/*# sourceMappingURL=styles.css.map */

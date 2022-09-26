@@ -1,0 +1,14 @@
+html {
+    height: 100%;
+}
+body {
+    background-color: map-get($estilos_generales, background-color);
+}
+a{
+    text-align: justify;
+    text-decoration: none;
+}
+
+.main-content {
+    text-align: center;
+} 

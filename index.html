@@ -7,8 +7,8 @@
     <title></title>
     <!--
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">––>
-        <link rel="stylesheet" href="./styles/style.css">
     -->
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     <div class="container">
@@ -17,13 +17,25 @@
             <h1>Primer API funcional</h1>
         </header>
             
-            
-        <div>
-            <form action="">
-                <p>Comentario</p>
-                <input required name="comment" type="text">
-            </form>
-            
+        <div class="main-content">
+            <p>
+                Enter the data to calculate your loan
+            </p>
+            <div>
+                <form name="main_form" action="./index.html" onsubmit="return validateForm()" method="post">
+                    <p>Monto</p>
+                    <input id="amount" type="number">
+                    <p>Cantidad de cuotas</p>
+                    <select name="cuotes">
+                        <option value=1>1</option>
+                        <option value="3">3</option>
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                    </select>
+                    <input type="submit">
+                </form>
+                
+            </div>
         </div>
     
     </div>
@@ -32,6 +44,6 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     -->
-    <script src="./test.js"></script>
+    <script src="./scripts/test.js"></script>
 </body>
 </html>
