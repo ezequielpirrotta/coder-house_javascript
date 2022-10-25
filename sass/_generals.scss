@@ -7,8 +7,9 @@ body {
 a{
     text-align: justify;
     text-decoration: none;
+    background-color: map-get($estilos_generales, background-color);
 }
 
 .main-content {
     text-align: center;
-} 
+}

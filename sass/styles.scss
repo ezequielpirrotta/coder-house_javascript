@@ -9,7 +9,7 @@
     flex-direction: column;
     text-align: center;
 }   
-body{
+body {
     @extend .column_form;
     min-height: 100%;
     text-align: center;
@@ -19,4 +19,18 @@ body{
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: 1;
+}
+.form {
+    @extend .column_form;
+}
+
+#main_form {
+    margin: 30px;
+    
+    @extend .column_form;
+    select {
+        align-items: center;
+        width:20%;
+        max-width:90%;
+    }
 }

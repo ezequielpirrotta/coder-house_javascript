@@ -3,12 +3,13 @@ html {
 }
 
 body {
-  background-color: #062f55;
+  background-color: #b86d12;
 }
 
 a {
   text-align: justify;
   text-decoration: none;
+  background-color: #b86d12;
 }
 
 .main-content {
@@ -20,7 +21,7 @@ a {
   margin: 0;
 }
 
-.column_form, body {
+.column_form, #main_form, .form, body {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -38,4 +39,13 @@ body {
           animation-name: aparecer;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
+}
+
+#main_form {
+  margin: 30px;
+}
+#main_form select {
+  align-items: center;
+  width: 20%;
+  max-width: 90%;
 }/*# sourceMappingURL=styles.css.map */
