@@ -1,1 +1,26 @@
-{}
+{
+    "15654": 
+    {
+        "date": "Sep 05, 2023",
+        "original_value": "56.000",
+        "total": "61.600",
+        "total_x_cuotes": "20,533.33",
+        "type": "Auto"
+    },
+    "49578":
+    {
+        "date": "Jul 13, 2023",
+        "original_value": "900003",
+        "total": "1.125.003,75",
+        "total_x_cuotes": "187.500,63",
+        "type": "Auto"
+    },
+    "30644":
+    {
+        "date": "Apr 15, 2023",
+        "original_value": "540000",
+        "total": "594.000",
+        "total_x_cuotes": "148.500,00",
+        "type": "Personal"
+    }
+}

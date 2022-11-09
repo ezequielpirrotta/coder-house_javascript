@@ -1,12 +1,11 @@
 import {LoanCalculator} from './loanCalculator.js';
 
 
-let button = document.getElementById("boton");
+let button_go = document.getElementById("boton_simular");
+let button_back = document.getElementById("boton_volver");
 
-
-button.addEventListener("click", (e) =>
+button_go.addEventListener("click", (e) =>
 {
-    //e.preventDefault();
     let amount = parseInt(document.getElementById("amount").value);
     let cuotes = parseInt(document.getElementById("cuotes").value);
     let type = document.getElementById("type").value;
@@ -32,4 +31,9 @@ button.addEventListener("click", (e) =>
             }
         })
     }       
+})
+
+button_back.addEventListener("click", (e) => 
+{
+    window.location.href = '../index.html';
 })
