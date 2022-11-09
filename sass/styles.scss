@@ -6,14 +6,16 @@
 }
 .column_form {
     display: flex;
+    align-content: center;
     flex-direction: column;
-    text-align: center;
+    flex-wrap: wrap;
 }   
 body {
-    @extend .column_form;
+    /*@extend .column_form;*/
     min-height: 100%;
     text-align: center;
     align-items: center;
+    
     color: map-get($estilos_generales, letters-color);
     /* animation section */
     animation-duration: 2s;
@@ -22,12 +24,15 @@ body {
 }
 .form {
     @extend .column_form;
+    /*flex-wrap: wrap;*/
 }
-
+.animate__animated.animate__backInDown, .animate__animated.animate__backOutUp{
+    --animate-duration: 0.5s;
+  }
 #main_form {
-    margin: 30px;
-    
     @extend .column_form;
+    margin: 30px;
+    align-items: center;
     select {
         align-items: center;
         width:20%;
