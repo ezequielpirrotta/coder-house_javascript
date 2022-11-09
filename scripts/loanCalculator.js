@@ -1,23 +1,15 @@
-//import loans from "../assets/loans.json"
+import loans from '../assets/loan_interest.json' assert {type: 'json'};
+
 export class LoanCalculator {
 
     interests = [];
     constructor ()
     {
-        /*let response = fetch("../assets/loans.json")
-            .then(response => response.json())
-
-        let response = ('./data.json');
-        
-        /*let loans = JSON.parse(response)*/
-        let loans = {
-            "car":[ 0, 0.05, 0.10, 0.15, 0.20, 0.25 ],
-            "personal":[ 0, 0.025, 0.05, 0.10, 0.15, 0.20 ]
-        };
         for(let type in loans)
         {
             this.interests[type] = loans[type];    
         }
+        
     }
     calculateLoan(amount, cuotes, type)
     {
@@ -31,11 +23,11 @@ export class LoanCalculator {
         {
             if(type === loan_type)
             {
-                for(let i = 1; i < this.interests[loan_type].length; i++)
+                for(let i = 0; i < this.interests[loan_type].length; i++)
                 {
-                    if(i == cuotes)
+                    if(i == cuotes - 1)
                     {
-                        result.total = amount + (amount * this.interests[loan_type][i]);
+                        result.total = amount + (amount * this.interests[loan_type][i]); 
                         result.total = parseFloat(parseFloat(result.total).toFixed(2));
 
                     }
