@@ -1,1 +1,1 @@
-# coder-house_javascript
+Este es un proyecto simple tipo simulador de préstamos
